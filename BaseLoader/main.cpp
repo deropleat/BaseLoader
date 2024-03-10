@@ -32,7 +32,6 @@ int main(int argv, const char* argc[])
 
 	if (destination->getContentLength() != source->getContentLength())
 	{
-		std::cout << "bye";
 		NOTIFY("Invalid content-length of the source file!");
 		if (destination->getContentLength() > source->getContentLength())
 		{
